@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<form name="calculadora" id="calculadora">
+    <table>
+        <tr>
+            <td class="pantalla" colspan="5">
+                <input id="display" name="display" class="ingreso" type="text" placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td><input name="suma" class="botonc" type="button" value="+" onclick="mostrarnumeros(value)"></td>
+            <td><input name="resta" class="botonc" type="button" value="-" onclick="mostrarnumeros(value)"></td>
+            <td><input name="multiplicacion" class="botonc" type="button" value="*" onclick="mostrarnumeros(value)"></td>
+            <td><input name="division" class="botonc" type="button" value="/" onclick="mostrarnumeros(value)"></td>
+            <td><input type="button" class="botonc" value="^4" onclick="elevado4()"></td>
+        </tr>
+        <tr>
+            <td><input name="num7" class="botonc" type="button" value="7" onclick="mostrarnumeros(value)"></td>
+            <td><input name="num8" class="botonc" type="button" value="8" onclick="mostrarnumeros(value)"></td>
+            <td><input name="num9" class="botonc" type="button" value="9" onclick="mostrarnumeros(value)"></td>
+            <td><input name="boton1" class="botonc" type="button" value="(" onclick="mostrarnumeros(value)"></td>
+            <td><input type="button" class="botonc" value="^3" onclick="elevado3()"></td>
+        </tr>
+        <tr>
+            <td><input name="num4" class="botonc" type="button" value="4" onclick="mostrarnumeros(value)"></td>
+            <td><input name="num5" class="botonc" type="button" value="5" onclick="mostrarnumeros(value)"></td>
+            <td><input name="num6" class="botonc" type="button" value="6" onclick="mostrarnumeros(value)"></td>
+            <td><input name="boton2" class="botonc" type="button" value=")" onclick="mostrarnumeros(value)"></td>
+            <td><input name="boton2" type="button" class="botonc" value="^2" onclick="elevado2()"></td>      
+        </tr>
+        <tr>
+            <td><input name="num1" class="botonc" type="button" value="1" onclick="mostrarnumeros(value)"></td>
+            <td><input name="num2" class="botonc" type="button" value="2" onclick="mostrarnumeros(value)"></td>
+            <td><input name="num3" class="botonc" type="button" value="3" onclick="mostrarnumeros(value)"></td>
+            <td><input type="button" class="botonc" value="cs" onclick="coseno()"></td>
+            <td><input type="button" class="botonc" value="sn" onclick="seno()"></td>
+        </tr>
+        <tr>
+            <td ><input name="num0" class="botonc" type="button" value="0" onclick="mostrarnumeros(value)"></td>
+            <td ><input name="num0" class="botonc" type="button" value="00" onclick="mostrarnumeros(value)"></td>
+            <td><input name="punto" class="botonc" type="button" value="." onclick="mostrarnumeros(value)"></td>
+            <td><input name="igual" class="botonc" type="button" value="=" onclick="operaciones()"></td>
+            <td><input name="borrar" class="botonc" type="reset" value="C" onclick="borrarTodo()"></td>
+        </tr>
+    </table>
+</form>
+<script src="js.js"></script>
+</body>
+</html>
